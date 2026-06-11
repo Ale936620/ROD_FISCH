@@ -1,0 +1,344 @@
+<!DOCTYPE gitshub>
+<gitshub lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>ROD_FISCH</title>
+    <style>
+        body {
+            font-family: georgia, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🎮 FISCH</h1>
+<p>RODS</p>
+
+</script>
+<input type="text" id="guess">
+<button onclick="checkGuess()">SEARCH</button>
+
+<div id="result"></div>
+
+<script>
+const rods = {
+    "carbon rod": {
+        lure: "10%",
+        luck: "25%",
+        control: "0.05",
+        resilience: "10%",
+        maxkg: "600kg"
+    },
+    "jinglestar rod": {
+        lure: "85%",
+        luck: "122.5%",
+        control: "0.4",
+        resilience: "5%",
+        maxkg: "infkg"
+    }
+};const rods = {
+    "carbon rod": {
+        lure: "10%",
+        luck: "25%",
+        control: "0.05",
+        resilience: "10%",
+        maxkg: "600kg"
+    },
+
+    "jinglestar rod": {
+        lure: "85%",
+        luck: "122.5%",
+        control: "0.4",
+        resilience: "5%",
+        maxkg: "infkg"
+    },
+
+    "fast rod": {
+        lure: "70%",
+        luck: "10%",
+        control: "0.05",
+        resilience: "-5%",
+        maxkg: "175kg",
+        level: "1"
+    },
+
+    "fischer's rod": {
+        lure: "10%",
+        luck: "10%",
+        control: "0.05",
+        resilience: "5%",
+        maxkg: "100kg",
+        level: "1"
+    },
+
+    "flimsy rod": {
+        lure: "0%",
+        luck: "0%",
+        control: "0",
+        resilience: "0%",
+        maxkg: "10.4kg",
+        level: "1"
+    },
+
+    "long rod": {
+        lure: "15%",
+        luck: "70%",
+        control: "0",
+        resilience: "0%",
+        maxkg: "5000kg",
+        level: "1"
+    },
+
+    "lucky rod": {
+        lure: "20%",
+        luck: "177%",
+        control: "0.07",
+        resilience: "7%",
+        maxkg: "175kg",
+        level: "1"
+    },
+
+    "plastic rod": {
+        lure: "10%",
+        luck: "15%",
+        control: "0",
+        resilience: "10%",
+        maxkg: "100kg",
+        level: "1"
+    },
+
+    "rose rend": {
+        lure: "85%",
+        luck: "115%",
+        control: "0.15",
+        resilience: "15%",
+        maxkg: "100000kg",
+        level: "N/A",
+        passive: "+15% Progress Speed"
+    },
+
+    "scarlet ravager": {
+        lure: "90%",
+        luck: "125%",
+        control: "0.2",
+        resilience: "20%",
+        maxkg: "Infinite",
+        passive: "+15% Progress Speed"
+    }
+};
+
+function checkGuess() {
+    let search = document.getElementById("guess").value.toLowerCase();
+
+    if (rods[search]) {
+        let rod = rods[search];
+
+        document.getElementById("result").innerHTML = `
+            <div class="rod-card">
+                <div class="rod-info">
+                    <h2>${search}</h2>
+                    <p><strong>Lure Speed:</strong> ${rod.lure}</p>
+                    <p><strong>Luck:</strong> ${rod.luck}</p>
+                    <p><strong>Control:</strong> ${rod.control}</p>
+                    <p><strong>Resilience:</strong> ${rod.resilience}</p>
+                    <p><strong>Max Kg:</strong> ${rod.maxkg}</p>
+                </div>
+            </div>
+        `;
+    } else {
+        document.getElementById("result").innerHTML = "Rod niet gevonden!";
+    }
+}
+</script>
+
+    
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.rod-card {
+    width: 700px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+}
+
+.rod-info {
+    flex: 1;
+}
+
+.rod-info h2 {
+    margin-top: 0;
+}
+
+.rod-image img {
+    width: 180px;
+    height: auto;
+}
+</style>
+</head>
+<body>
+STAGE 1
+
+<div class="rod-card">
+    <div class="rod-info">
+        <h2>Carbon Rod</h2>
+        <p><strong>common</strong></p>
+        <p><strong>Lure Speed:</strong> 10%</p>
+        <p><strong>Luck:</strong> 25%</p>
+        <p><strong>Control:</strong> 0.05</p>
+        <p><strong>Resilience:</strong> 10%</p>
+        <p><strong>Max Kg:</strong> 600kg</p>
+        <p><strong>level:</strong>  1</p>
+     </div>
+
+ </div>
+
+
+<div class="rod-card">
+ <div class="rod-info">
+        <h2>Fast Rod</h2>
+        <p><strong>common</strong></p>
+
+        <p><strong>Lure Speed:</strong> 70%</p>
+        <p><strong>Luck:</strong> 10%</p>
+        <p><strong>Control:</strong> 0.05</p>
+        <p><strong>Resilience:</strong> -5%</p>
+        <p><strong>Max Kg:</strong> 175kg</p>
+        <p><strong>level:</strong>  1</p>
+      </div>
+
+ </div>
+
+
+<div class="rod-card">
+    <div class="rod-info">
+        <h2>Fischer's Rod</h2>
+        <p><strong>Lure Speed:</strong> 10%</p>
+        <p><strong>Luck:</strong> 10%</p>
+        <p><strong>Control:</strong> 0.05</p>
+        <p><strong>Resilience:</strong> 5%</p>
+        <p><strong>Max Kg:</strong> 100kg</p>
+        <p><strong>level:</strong>  1</p>
+      </div>
+</div>
+  
+<div class="rod-card">
+    <div class="rod-info">
+        <h2>Flimsy Rod</h2>
+        <p><strong>Lure Speed:</strong> 0%</p>
+        <p><strong>Luck:</strong> 0%</p>
+        <p><strong>Control:</strong> 0</p>
+        <p><strong>Resilience:</strong> 0%</p>
+        <p><strong>Max Kg:</strong> 10.4kg</p>
+        <p><strong>level:</strong>  1</p>
+      </div>
+
+</div>
+
+<div class="rod-card">
+    <div class="rod-info">
+        <h2>Jinglestar Rod</h2>
+        <p><strong>Lure Speed:</strong> 85%</p>
+        <p><strong>Luck:</strong> 122.5%</p>
+        <p><strong>Control:</strong> 0.4</p>
+        <p><strong>Resilience:</strong> 5%</p>
+        <p><strong>Max Kg:</strong> infkg</p>
+        <p><strong>Level:</strong> 25</p>
+    </div>
+</div>
+
+<div class="rod-card">
+    <div class="rod-info">
+        <h2>Long Rod</h2>
+        <p><strong>Lure Speed:</strong> 15%</p>
+        <p><strong>Luck:</strong> 70%</p>
+        <p><strong>Control:</strong> 0</p>
+        <p><strong>Resilience:</strong> 0%</p>
+        <p><strong>Max Kg:</strong> 5000kg</p>
+        <p><strong>Level:</strong> 1</p>
+    </div>
+</div>
+
+<div class="rod-card">
+    <div class="rod-info">
+        <h2>Lucky Rod</h2>
+        <p><strong>Lure Speed:</strong> 20%</p>
+        <p><strong>Luck:</strong> 177%</p>
+        <p><strong>Control:</strong> 0.07</p>
+        <p><strong>Resilience:</strong> 7%</p>
+        <p><strong>Max Kg:</strong> 175kg</p>
+        <p><strong>Level:</strong> 1</p>
+    </div>
+</div>
+
+<div class="rod-card">
+    <div class="rod-info">
+        <h2>Plastic Rod</h2>
+        <p><strong>Lure Speed:</strong> 10%</p>
+        <p><strong>Luck:</strong> 15%</p>
+        <p><strong>Control:</strong> 0</p>
+        <p><strong>Resilience:</strong> 10%</p>
+        <p><strong>Max Kg:</strong> 100kg</p>
+        <p><strong>Level:</strong> 1</p>
+    </div>
+</div>
+
+<div class="rod-card">
+    <div class="rod-info">
+        <h2>Rose Rend</h2>
+        <p><strong>Lure Speed:</strong> 85%</p>
+        <p><strong>Luck:</strong> 115%</p>
+        <p><strong>Control:</strong> 0.15</p>
+        <p><strong>Resilience:</strong> 15%</p>
+        <p><strong>Max Kg:</strong> 100000kg</p>
+        <p><strong>Level:</strong> N/A Redeemable DLC code included with the Fisch Plush 4" </p>
+        <p><strong>Passive:</strong> +15% Progress Speed</p>
+    </div>
+</div>
+<div class="rod-card">
+    <div class="rod-info">
+
+
+        <h2>Scarlet Ravager</h2>
+        <p><strong>Lure Speed:</strong> 90%</p>
+        <p><strong>Luck:</strong> 125%</p>
+        <p><strong>Control:</strong> 0.2</p>
+        <p><strong>Resilience:</strong> 20%</p>
+        <p><strong>Max Kg:</strong> Infinite</p>
+        <p><strong>Passive:</strong> +15% Progress Speed</p>
+        <p><strong>Obtainment:</strong> Fisch Plush 4 Mystery Box (DLC)</p>
+    </div>
+</div>
+<div class="rod-card">
+    <div class="rod-info">
+
+        <h2>Stone Rod</h2>
+        <p><strong>Lure Speed:</strong> -5%</p>
+        <p><strong>Luck:</strong> 40%</p>
+        <p><strong>Control:</strong> 0.2</p>
+        <p><strong>Resilience:</strong> 5%</p>
+        <p><strong>Max Kg:</strong> 50,000</p>
+        <p><strong>Passive:</strong> None</p>
+        <p><strong>Obtainment:</strong> Purchase for 2,000C$ on Ancient Isle</p>
+    </div>
+</div>
